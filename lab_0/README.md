@@ -12,7 +12,7 @@
 
 ---
 
-![]("C:\Users\elena\OneDrive\Документы\GitHub\Program\lab_0\P.png")
+![]("lab_0\P.png")
 ```
 #include <stdio.h>
 
