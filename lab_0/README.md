@@ -12,7 +12,7 @@
 
 ---
 
-![](lab_0\P.png) 
+![](P.png) 
 
 ```
 #include <stdio.h>
