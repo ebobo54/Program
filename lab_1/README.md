@@ -41,16 +41,16 @@ a<b
 ![](E.png)
 
 ---
-```mermid
+```mermaid
 flowchart TD
-A[Начало] --> B{a,b}
-B --> C[a>b]
-C -- true --> D[print a]
-C -- false --> E[a=b]
-E -- true --> F[Сумма цифр = b]
-E -- false --> G[a<b]
-G --> H[a+b]
-H --> I[Конец]
-D --> I[Конец]
-F --> I[Конец]
+A[Начало] --> B{a,b};
+B ----> C[a>b];
+C -- true --> D[print a];
+C -- false --> E[a=b];
+E -- true --> F[Сумма цифр = b];
+E -- false --> G[a<b];
+G ----> H[a+b];
+H ----> I[Конец];
+D ----> I[Конец];
+F ----> I[Конец];
 ```
