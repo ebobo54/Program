@@ -23,6 +23,7 @@ int main()
 
 }
 ```
+## Результаты работы
 ![](Q.png)
 
 ---
@@ -54,3 +55,5 @@ H ----> I[Конец];
 D ----> I[Конец];
 F ----> I[Конец];
 ```
+1. [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/)
+2. [stackoverflow](https://stackoverflow.com/questions/34836305/how-do-i-make-a-flowchart-using-markdown-on-my-github-blog)
