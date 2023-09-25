@@ -41,7 +41,8 @@ a<b
 ![](E.png)
 
 ---
-
+```mermid
+flowchart TD
 A[Начало] --> B{a,b}
 B --> C[a>b]
 C -- true --> D[print a]
@@ -51,4 +52,5 @@ E -- false --> G[a<b]
 G --> H[a+b]
 H --> I[Конец]
 D --> I[Конец]
-F --. I[Конец]
+F --> I[Конец]
+```
