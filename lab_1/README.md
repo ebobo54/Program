@@ -48,7 +48,7 @@ B ----> C[a>b];
 C -- true --> D[print a];
 C -- false --> E[a=b];
 E -- true --> F[Сумма цифр = b];
-E -- false --> G[a<b];
+E -- false --> G[a];
 G ----> H[a+b];
 H ----> I[Конец];
 D ----> I[Конец];
