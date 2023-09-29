@@ -1,27 +1,21 @@
 #include <stdio.h>
 #include <math.h>
-int main()
-{
-    float a, b;
+int main() {
+    int a, b;
+    int q, w, e, u, r, t, y, o;
     printf("Enter a -> ");
     scanf("%f", &a);
     printf("Enter b -> ");
     scanf("%f", &b);
-    q=a/100;
-    w=(a%100)/10;
-    e=a%10;
-    q+w+e=u
-    r=d/100;
-    t=(d%100)/10;
-    y=d%10;
-    r+t+y=o
-    if (u > o)
-        printf("%f\n",u);
-    if (u == o)
-        printf("%f ë„¨¨† Ê®‰‡ =\n",o);
-    if (u < o)
-        printf("%f\n",u+o);
+    q += a%10;
+    a /= 10;
+    r += b%10;
+    b /= 10;
+    if (q  > r)
+        printf("%f\n", q +b);
+    if (q + e == r + y)
+        printf("%f ë„¨¨† Ê®‰‡ =\n", r + b);
+    if (q + e < r + y)
+        printf("%f\n", q+a+r+b);
     return 0;
-
 }
-
