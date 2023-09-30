@@ -1,21 +1,31 @@
 #include <stdio.h>
-#include <math.h>
-int main() {
-    int a, b;
-    int q, w, e, u, r, t, y, o;
-    printf("Enter a -> ");
-    scanf("%f", &a);
-    printf("Enter b -> ");
-    scanf("%f", &b);
-    q += a%10;
-    a /= 10;
-    r += b%10;
-    b /= 10;
-    if (q  > r)
-        printf("%f\n", q +b);
-    if (q + e == r + y)
-        printf("%f ë„¨¨† Ê®‰‡ =\n", r + b);
-    if (q + e < r + y)
-        printf("%f\n", q+a+r+b);
+
+int main()
+{
+    int amnam(int num)
+    {
+        int sum = 0;
+        while (num != 0) {
+            sum += num % 10;
+            num /= 10;
+        }
+        return sum;
+    }
+
+    int a, b, q, w;
+    printf("Enter numbers a: ");
+    scanf("%d", &a);
+    printf("Enter numbers b: ");
+    scanf("%d", &b);
+    q = amnam(a);
+    w = amnam(b);
+    if (q > w) {
+        printf("sum numbers a > sum numbers b %d\n", q);
+    } if (q == w) {
+        printf("Sum numbers = b %d\n", w);
+    } if (q < w){
+        printf("sum numbers a < b %d\n", q + w);
+    }
+
     return 0;
 }
