@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="CMakeSettings">
     <configurations>
       <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
@@ -7,7 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e2b7018-8e65-41d6-9626-bced0b909664" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../lab_1/lab_1.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../lab_1/lab_1.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +48,10 @@
     &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -68,6 +75,8 @@
       <workItem from="1695823186692" duration="1000" />
       <workItem from="1695913216743" duration="9000" />
       <workItem from="1696057330536" duration="7000" />
+      <workItem from="1696068228792" duration="601000" />
+      <workItem from="1696070247709" duration="1246000" />
     </task>
     <servers />
   </component>
