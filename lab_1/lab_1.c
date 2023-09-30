@@ -20,11 +20,11 @@ int main()
     q = amnam(a);
     w = amnam(b);
     if (q > w) {
-        printf("sum numbers a > sum numbers b %d\n", q);
+        printf("%d\n", q);
     } if (q == w) {
-        printf("Sum numbers = b %d\n", w);
+        printf("sum numbers = b %d\n", w);
     } if (q < w){
-        printf("sum numbers a < b %d\n", q + w);
+        printf("%d\n", q + w);
     }
 
     return 0;

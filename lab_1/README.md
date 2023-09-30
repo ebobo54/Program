@@ -6,21 +6,35 @@
 Вывести сумму цифр числа a если она больше b, если равна b - сообщение Сумма цифр = b, и значение суммы, увеличенное на b, если сумма меньше b.
 ```c
 #include <stdio.h>
+
 int main()
 {
-    float a, b;
-    printf("Enter a -> ");
-    scanf("%f", &a);
-    printf("Enter b -> ");
-    scanf("%f", &b);
-    if (a > b)
-        printf("%f\n",a);
-    if (a == b)
-        printf("%f Сумма цифр =\n",b);
-    if (a < b)
-        printf("%f\n",a+b);
-    return 0;
+    int amnam(int num)
+    {
+        int sum = 0;
+        while (num != 0) {
+            sum += num % 10;
+            num /= 10;
+        }
+        return sum;
+    }
 
+    int a, b, q, w;
+    printf("Enter numbers a: ");
+    scanf("%d", &a);
+    printf("Enter numbers b: ");
+    scanf("%d", &b);
+    q = amnam(a);
+    w = amnam(b);
+    if (q > w) {
+        printf("sum numbers a > sum numbers b %d\n", q);
+    } if (q == w) {
+        printf("Sum numbers = b %d\n", w);
+    } if (q < w){
+        printf("sum numbers a < b %d\n", q + w);
+    }
+
+    return 0;
 }
 ```
 ![](Q.png)
