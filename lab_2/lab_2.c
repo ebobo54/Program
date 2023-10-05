@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <math.h>
+#include <unistd.h>
 
 int main()
 {
@@ -18,7 +19,13 @@ int main()
             y = exp(-pow(x, 2.0) - pow(x, 2.0) + 2.0 * x);
         printf("%lf %lf\n", x, y);
         x += s;
+        fflush(output); 
+        usleep(10000);
+        fprintf(gp, "replot \n");
+        fflush(gp);
         n = n - 1;
     }
+    fclose(gp);
+    fclose(output);
     return 0;
 }
