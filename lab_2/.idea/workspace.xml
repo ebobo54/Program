@@ -9,11 +9,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e2b7018-8e65-41d6-9626-bced0b909664" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab_2.exe" beforeDir="false" afterPath="$PROJECT_DIR$/lab_2.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_graph.txt" beforeDir="false" afterPath="$PROJECT_DIR$/my_graph.txt" afterDir="false" />
-    </list>
+    <list default="true" id="0e2b7018-8e65-41d6-9626-bced0b909664" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -88,7 +84,7 @@
       <workItem from="1696586213402" duration="24000" />
       <workItem from="1696587614992" duration="1195000" />
       <workItem from="1696590957195" duration="2856000" />
-      <workItem from="1696597348931" duration="331000" />
+      <workItem from="1696597278878" duration="2988000" />
     </task>
     <servers />
   </component>
