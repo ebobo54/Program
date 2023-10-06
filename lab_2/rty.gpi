@@ -1,19 +1,9 @@
-set term gif \
-    animate \
-    optimize \
-    delay 100 \
-    size 300, 300 \
-    background "#ffeedf" \
-    crop \
-    font "URW Type 1,10"
-set output "plot.gif"
-set size square
-set xlabel "x" 
-set ylabel "f(x)"
-set xzeroaxis
-set grid
-set title "График функции f(x)"
-plot "< my_graph.txt | tr --delete '$'" with lines title "f(x)"
+#!/usr/bin/gnuplot
 
-}
-
+set terminal png notransparent interlace size 640,480
+set output "my_graph.png"
+set datafile separator tab
+set xdata time
+set timefmt "%s"
+set format x "%4Y-%02m-%02d"
+plot "my_graph.txt" using 1:4 title "Blah"

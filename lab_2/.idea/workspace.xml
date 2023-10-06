@@ -11,12 +11,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0e2b7018-8e65-41d6-9626-bced0b909664" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plot — копия.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plot.gif" beforeDir="false" afterPath="$PROJECT_DIR$/plot.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plot.plt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rty.gpi" beforeDir="false" afterPath="$PROJECT_DIR$/rty.gpi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab_2.exe" beforeDir="false" afterPath="$PROJECT_DIR$/lab_2.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_graph.txt" beforeDir="false" afterPath="$PROJECT_DIR$/my_graph.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,23 +44,23 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="lab_2.c" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lab_2" TARGET_NAME="lab_2.c" CONFIG_NAME="lab_2.c">
       <option name="sourceFile" value="lab_2.c" />
@@ -91,7 +87,8 @@
       <workItem from="1696340467010" duration="2282000" />
       <workItem from="1696586213402" duration="24000" />
       <workItem from="1696587614992" duration="1195000" />
-      <workItem from="1696590957195" duration="1608000" />
+      <workItem from="1696590957195" duration="2856000" />
+      <workItem from="1696597348931" duration="331000" />
     </task>
     <servers />
   </component>
