@@ -68,3 +68,8 @@ ___
 ---
 ### Блок-схема
 ![](qwerty.png)
+
+---
+
+1. [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/)
+2. [Блок-схемы](https://app.diagrams.net/?src=about)
