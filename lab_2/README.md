@@ -68,8 +68,8 @@ ___
 ---
 ### Блок-схема
 
-```geojson
-flowchart TD;
+```mermaid
+flowchart TD
     A[Начало] --> B{x,y};
     B --> C[?x?1];
     B --> D[1<x?2];
