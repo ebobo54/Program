@@ -57,7 +57,13 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="C/C++ File.lab_2.c">
+    <configuration name="lab_22.c" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lab_2" TARGET_NAME="lab_22.c" CONFIG_NAME="lab_22.c">
+      <option name="sourceFile" value="lab_22.c" />
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="lab_2.c" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lab_2" TARGET_NAME="lab_2.c" CONFIG_NAME="lab_2.c">
       <option name="sourceFile" value="lab_2.c" />
       <method v="2">
@@ -84,7 +90,8 @@
       <workItem from="1696586213402" duration="24000" />
       <workItem from="1696587614992" duration="1195000" />
       <workItem from="1696590957195" duration="2856000" />
-      <workItem from="1696597278878" duration="2988000" />
+      <workItem from="1696597348931" duration="331000" />
+      <workItem from="1696597688787" duration="3245000" />
     </task>
     <servers />
   </component>
