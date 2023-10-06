@@ -1,8 +1,21 @@
-#! /usr/bin/gnuplot -persist
-set xlabel "X" 
-set ylabel "Y"
+set term gif \
+    animate \
+    optimize \
+    delay 100 \
+    size 300, 300 \
+    background "#ffeedf" \
+    crop \
+    font "URW Type 1,10"
+set output "plot.gif"
+set size square
+set xlabel "x" 
+set ylabel "f(x)"
+set xzeroaxis
 set grid
-set yrange [-1.1:1.1]
-set xrange[-pi:pi]
-set title "Gnuplot for habr" font "Helvetica Bold, 20"
-plot sin(x) title "sinux"  lc rgb "red", cos(x)  title "cosinus" lc rgb "green"
+set title "График функции f(x)"
+do for [i=0:10] {
+  set arrow 1 from 0.15, 0.85 to 0.15, exp(-(i+i/10.0)/15.)-0.15 ls 3 lw 2
+  plot "my_graph.txt" with lines title "f(x)"
+
+}
+
