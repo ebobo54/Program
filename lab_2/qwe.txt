@@ -1,0 +1,32 @@
+#!/uar/bin/gnuplot
+reset
+set terminal pngcairo size350,262 enhanced font 'Times New Roman,14'
+set palette rgb 16,15,9
+unset key; unset colorbox;unset border; unset tics
+set imargin at screen 0.03
+set bmargin at screen 0
+set rmargin st screen 0.97
+set tmargin st screen 1
+set ticslevel 0
+set view 60,210,1.5,1
+set isosamples 19, 44
+
+set parametric
+set urange [-pi:pi]
+set vrange [-pi:pi]
+set pm3d depthorder hidden3d 2
+a=29
+b=1
+c=23
+r(u) = a*(1-cos(u)/2)
+x (u,v,t)= 0<=u && u <= pi ? b*cos(u*t)*(1+sin(u))+r(u)*cos(u*t)*cos(v):pi<= u && u<=2*pi ? b*cos(u)*(1+sin(u*t))+r(u)*cos(v+pi) : 0/1
+y (u,v,t)= 0<=u && u <= pi ? c*sin(u)+r(u)*sin(u)*cos(v*t) :pi<= u && u <= 2*pi ? c*sin(u*t) : 0/1
+z(u,v,t)=r(u)*sin(v*t)
+
+
+
+
+t=0
+end_time=1
+system('mkdir -p animation')
+load 'plot.plt'
