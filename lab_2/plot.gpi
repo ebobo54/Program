@@ -1,8 +1,0 @@
-#! /usr/bin/env -S gnuplot -persist
-# set terminal png enhanced
-# set output "my_graph.png"
-set xlabel "x" 
-set ylabel "y"
-set grid
-set title "lab_2 y"
-plot "my_graph.txt" with lines title "y"
