@@ -68,6 +68,16 @@ ___
 ---
 ### Блок-схема
 
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+
+
 ```mermaid
 flowchart TD
     A[Начало] --> B{x,y};
