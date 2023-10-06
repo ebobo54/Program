@@ -67,15 +67,15 @@ ___
 ![](R.png)
 
 ```mermaid
-flowchart TD
+graph TD;
 
-    A[Начало] --> B[x,y];
-    B --> C{[?x?1];
-    B --> D[1<x?2];
-    C --> E[cos(x+x^3)];
-    D --> F[e^(?x2)?x^2+2x];
-    E --> G[x,y];
-    F --> G[x,y];
-    G --> Q[ x += s n = n - 1];
-Q --> W[Конец]
+    A[Начало]-->B{x,y};
+    B-->C[?x?1];
+    B-->D[1<x?2];
+    C-->E[cos(x+x^3)];
+    D-->F[e^(?x2)?x^2+2x];
+    E-->G[x,y];
+    F-->G[x,y];
+    G-->Q[ x += s n = n - 1];
+Q-->W[Конец]
 ```
