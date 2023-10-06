@@ -78,16 +78,3 @@ F---->G[x,y];
 G---->Q[ x += s n = n - 1];
 Q---->W[Конец];
 ```
-```mermaid
-flowchart TD
-A[Начало] --> B{a,b};
-B ----> C[a>b];
-C -- true --> D[print a];
-C -- false --> E[a=b];
-E -- true --> F[Сумма цифр = b];
-E -- false --> G[b>a];
-G ----> H[a+b];
-H ----> I[Конец];
-D ----> I[Конец];
-F ----> I[Конец];
-```
