@@ -67,31 +67,4 @@ ___
 ![](R.png)
 ---
 ### Блок-схема
-
-
-```mermaid
-graph TD;
-    A[начало]-->B[x,y];
-    B-->C[0≤x≤1];
-    B-->D[1<x≤2];
-    C-->E[cos(x+x^3)];
-    D-->F[e^(-x^2)-x^2+2x];
-    E-->G[x,y];
-    F-->G;
-    G-->Q[ x += s n = n - 1];
-    Q --> W[Конец];
-```
-
-
-```mermaid
-flowchart TD
-    A[Начало] --> B{x,y};
-    B --> C[?x?1];
-    B --> D[1<x?2];
-    C --> E[cos(x+x^3)];
-    D --> F[e^(?x2)?x^2+2x];
-    E --> G[x,y];
-    F --> G[x,y];
-    G --> Q[ x += s n = n - 1];
-    Q --> W[Конец];
-```
+![](qwerty.png)
