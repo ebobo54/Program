@@ -10,6 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e2b7018-8e65-41d6-9626-bced0b909664" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/lab_2.c" beforeDir="false" afterPath="$PROJECT_DIR$/lab_2.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab_2.exe" beforeDir="false" afterPath="$PROJECT_DIR$/lab_2.exe" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,6 +80,7 @@
       <workItem from="1696070247709" duration="1246000" />
       <workItem from="1696161838415" duration="2780000" />
       <workItem from="1696340467010" duration="2282000" />
+      <workItem from="1696586213402" duration="24000" />
     </task>
     <servers />
   </component>
