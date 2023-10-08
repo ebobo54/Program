@@ -146,4 +146,3 @@ void process(int n, int a[]) {
 ## 4. Ссылки на используемые материалы
 1. [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/)
 2. [Прог. Лабораторная работа №3](https://evil-teacher.on.fleek.co/prog_pm/lab03/)
-3. [Нахождения максимального и минимального](https://www.geeksforgeeks.org/c-program-to-find-the-maximum-and-minimum-element-of-the-array/)
