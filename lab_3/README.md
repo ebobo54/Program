@@ -116,6 +116,27 @@ int findMaxIndex(int n, int a[]) {
 
 ```
 ### Вычисляет сумму индексов минимального и максимального элементов
+```c
+void process(int n, int a[]) {
+    int minIndex = findMinIndex(n, a);
+    int maxIndex = findMaxIndex(n, a);
+
+    int sumIndices = minIndex + maxIndex;
+
+    if (abs(sumIndices) < abs(a[minIndex])) {
+        a[minIndex] = sumIndices;
+    } else if (abs(sumIndices) > abs(a[maxIndex])) {
+        a[maxIndex] = sumIndices;
+    } else {
+        int start = (minIndex < maxIndex) ? minIndex : maxIndex;
+        int end = (minIndex > maxIndex) ? minIndex : maxIndex;
+
+        for (int i = start + 1; i < end; i++) {
+            a[i] = 0;
+        }
+    }
+}
+```
 ## 3. Скриншоты результатов
 ![](Q.png)
 ![](W.png)
