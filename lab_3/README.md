@@ -79,8 +79,33 @@ int main() {
 
     return 0;
 }
-
+```
+---
+### Заполнение массива случайными числами
+```c
+void fill(int n, int a[]) {
+    int i;
+    for (i = 0; i < n; i++)
+        a[i] = rand() % 101 - 50;
+}
 ``` 
+---
+### Поиск индекса минимального элемента
+```c
+int findMinIndex(int n, int a[]) {
+    int minIndex = 0;
+    for (int i = 1; i < n; i++) {
+        if (a[i] < a[minIndex])
+            minIndex = i;
+    }
+    return minIndex;
+}
+
+```
+---
+
+```c
+```
 ## 3. Скриншоты результатов
 ![](Q.png)
 ![](W.png)
@@ -90,3 +115,4 @@ int main() {
 ## 4. Ссылки на используемые материалы
 1. [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/)
 2. [Прог. Лабораторная работа №3](https://evil-teacher.on.fleek.co/prog_pm/lab03/)
+3. [Нахождения максимального и минимального](https://www.geeksforgeeks.org/c-program-to-find-the-maximum-and-minimum-element-of-the-array/)
