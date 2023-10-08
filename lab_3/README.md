@@ -103,8 +103,17 @@ int findMinIndex(int n, int a[]) {
 
 ```
 ---
-
+### Поиск индекса максимального элемента
 ```c
+int findMaxIndex(int n, int a[]) {
+    int maxIndex = 0;
+    for (int i = 1; i < n; i++) {
+        if (a[i] < a[maxIndex])
+            maxIndex = i;
+    }
+    return maxIndex;
+}
+
 ```
 ## 3. Скриншоты результатов
 ![](Q.png)
