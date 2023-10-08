@@ -26,7 +26,7 @@ int findMaxIndex(int n, int a[]) {
     return maxIndex;
 }
 
-void processArray(int n, int a[]) {
+void process(int n, int a[]) {
     int minIndex = findMinIndex(n, a);
     int maxIndex = findMaxIndex(n, a);
 
@@ -59,7 +59,7 @@ int main() {
         printf("%4d", A[i]);
     printf("\n");
 
-    processArray(n, A);
+    process(n, A);
 
     printf("Ne original\n");
     for (int i = 0; i < n; i++)
