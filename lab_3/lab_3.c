@@ -47,13 +47,13 @@ void process(int n, int a[]) {
 }
 
 int main() {
+    
     srand(time(NULL));
-    int n;
+    int n, a, i, w, q;
     printf("n -> ");
     scanf("%d", &n);
     int A[n];
     fill(n, A);
-
     printf("Original\n");
     for (int i = 0; i < n; i++)
         printf("%4d", A[i]);
@@ -65,6 +65,8 @@ int main() {
     for (int i = 0; i < n; i++)
         printf("%4d", A[i]);
     printf("\n");
+    printf("MinIndex%d\n",minIndex);
+    printf("MaxIndex\n",q);
 
     return 0;
 }
