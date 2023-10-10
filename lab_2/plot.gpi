@@ -5,4 +5,4 @@ set xlabel "x"
 set ylabel "f(x)"
 set grid
 set title "График функции f(x)"
-plot "< my_graph.txt | tr --delete '$'" with lines title "f(x)"
+plot "my_graph.txt" with lines title "f(x)"

@@ -1,9 +1,0 @@
-#!/usr/bin/gnuplot
-
-set terminal png notransparent interlace size 640,480
-set output "my_graph.png"
-set datafile separator tab
-set xdata time
-set timefmt "%s"
-set format x "%4Y-%02m-%02d"
-plot "my_graph.txt" using 1:4 title "Blah"

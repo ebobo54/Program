@@ -9,7 +9,16 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e2b7018-8e65-41d6-9626-bced0b909664" name="Changes" comment="" />
+    <list default="true" id="0e2b7018-8e65-41d6-9626-bced0b909664" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/R.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/animate.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab_2.exe" beforeDir="false" afterPath="$PROJECT_DIR$/lab_2.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_graph.txt" beforeDir="false" afterPath="$PROJECT_DIR$/my_graph.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/op.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plot.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rty.gpi" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -93,6 +102,8 @@
       <workItem from="1696597348931" duration="331000" />
       <workItem from="1696597688787" duration="3245000" />
       <workItem from="1696659219293" duration="598000" />
+      <workItem from="1696860148820" duration="77000" />
+      <workItem from="1696860983119" duration="607000" />
     </task>
     <servers />
   </component>
