@@ -54,7 +54,7 @@ int main() {
     scanf("%d", &n);
     int A[n];
     fill(n, A);
-<<<<<<< HEAD
+
     int minIndex = findMinIndex(n, A);
     printf("MinIndex: %d\n", minIndex);
 
@@ -69,9 +69,7 @@ int main() {
 
     int MinNumber = A[minIndex];
     printf("MaxNumber: %d\n", MinNumber);
-
-=======
->>>>>>> 0f46949461caa9f39cf8e5b0892c5a7fd605c6ad
+    
     printf("Original\n");
     for (int i = 0; i < n; i++)
         printf("%4d", A[i]);
