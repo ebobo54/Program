@@ -68,7 +68,7 @@ int main() {
     printf("MaxNumber: %d\n", MaxNumber);
 
     int MinNumber = A[minIndex];
-    printf("MaxNumber: %d\n", MinNumber);
+    printf("MinNumber: %d\n", MinNumber);
     
     printf("Original\n");
     for (int i = 0; i < n; i++)
@@ -81,8 +81,6 @@ int main() {
     for (int i = 0; i < n; i++)
         printf("%4d", A[i]);
     printf("\n");
-    printf("MinIndex%d\n",minIndex);
-    printf("MaxIndex\n",q);
 
     return 0;
 }
