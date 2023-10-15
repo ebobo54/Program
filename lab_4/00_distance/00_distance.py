@@ -35,7 +35,9 @@ distances['Paris']['London'] = Paris_London
 distances['Paris']['Moscow'] = Moscow_Paris
 # TODO здесь заполнение словаря
 
-print(distances)
+result = {'Moscow-London' : distances['Moscow']['London'], 'Moscow-Paris' : distances['Moscow']['Paris'], 'Paris-London' : distances['Paris']['London']}
+
+print(result)
 
 
 
