@@ -41,12 +41,12 @@ void process(int n, int a[]) {
     int minIndex = findMinIndex(n, a);
     int maxIndex = findMaxIndex(n, a);
 
-    int sumIndices = minIndex + maxIndex;
+    int sumIndex = minIndex + maxIndex;
 
-    if (abs(sumIndices) < abs(a[minIndex])) {
-        a[minIndex] = sumIndices;
-    } else if (abs(sumIndices) > abs(a[maxIndex])) {
-        a[maxIndex] = sumIndices;
+    if (abs(sumIndex) < abs(a[minIndex])) {
+        a[minIndex] = sumIndex;
+    } else if (abs(sumIndex) > abs(a[maxIndex])) {
+        a[maxIndex] = sumIndex;
     } else {
         int start = (minIndex < maxIndex) ? minIndex : maxIndex;
         int end = (minIndex > maxIndex) ? minIndex : maxIndex;
@@ -58,13 +58,44 @@ void process(int n, int a[]) {
 }
 
 int main() {
+    
     srand(time(NULL));
-    int n;
+    int n, a, i, w, q;
     printf("n -> ");
     scanf("%d", &n);
     int A[n];
     fill(n, A);
 
+    int minIndex = findMinIndex(n, A);
+    int maxIndex = findMaxIndex(n, A);
+
+    int sumIndex = minIndex + maxIndex;
+
+    if (abs(sumIndex) < abs(A[minIndex])) {
+        printf("SumIndex < MinIndex \n");
+    }else if(abs(sumIndex) > abs(A[maxIndex])){
+        printf("SumIndex > MaxIndex \n");
+    }else printf("SumIndex = MaxIndex\n" ,000);
+
+
+    printf("MinIndex: %d\n", minIndex);
+
+    printf("MaxIndex: %d\n", maxIndex);
+
+    printf("SumIndex: %d\n", sumIndex);
+     
+     if (abs(sumIndex) < abs(A[minIndex])) {
+        printf("SumIndex < MinIndex \n");
+    }else if(abs(sumIndex) > abs(A[maxIndex])){
+        printf("SumIndex > MaxIndex \n");
+    }else printf("SumIndex = MaxIndex\n" ,000);
+
+    int MaxNumber = A[maxIndex];
+    printf("MaxNumber: %d\n", MaxNumber);
+
+    int MinNumber = A[minIndex];
+    printf("MinNumber: %d\n", MinNumber);
+    
     printf("Original\n");
     for (int i = 0; i < n; i++)
         printf("%4d", A[i]);
