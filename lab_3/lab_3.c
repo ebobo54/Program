@@ -72,6 +72,12 @@ int main() {
     printf("MaxIndex: %d\n", maxIndex);
 
     printf("SumIndex: %d\n", sumIndex);
+     
+     if (abs(sumIndex) < abs(A[minIndex])) {
+        printf("SumIndex < MinIndex \n");
+    }else if(abs(sumIndex) > abs(A[maxIndex])){
+        printf("SumIndex > MaxIndex \n");
+    }else printf("SumIndex = MaxIndex\n" ,000);
 
     int MaxNumber = A[maxIndex];
     printf("MaxNumber: %d\n", MaxNumber);
