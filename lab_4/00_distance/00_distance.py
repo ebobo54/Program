@@ -12,11 +12,27 @@ sites = {
 # Составим словарь словарей расстояний между ними
 # расстояние на координатной сетке - ((x1 - x2) ** 2 + (y1 - y2) ** 2) ** 0.5
 
-distances = {
+distances = dict()
 
-}
-Moscow_London:((x1 - x2) ** 2 + (y1 -y2) ** 2) ** 0.5
+M = sites['Moscow']
+L = sites['London']
+P = sites['Paris']
 
+Moscow_Paris = ((M[0] - L[0]) ** 2 + (M[1] - L[1]) ** 2) **  0.5
+Moscow_London = ((M[0] - L[0]) ** 2 + (M[1] - L[1]) ** 2) **  0.5
+Paris_London = ((P[0] - L[0]) ** 2 + (P[1] - L[1]) ** 2) **  0.5
+
+distances['Moscow'] = {}
+distances['Moscow']['London']=Moscow_London
+distances['Moscow']['Paris']=Moscow_Paris
+
+distances['London'] = {}
+distances['London']['Paris'] = Paris_London
+distances['London']['Moscow'] = Moscow_London
+
+distances['Paris'] = {}
+distances['Paris']['London'] = Paris_London
+distances['Paris']['Moscow'] = Moscow_Paris
 # TODO здесь заполнение словаря
 
 print(distances)
