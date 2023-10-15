@@ -56,12 +56,21 @@ int main() {
     fill(n, A);
 
     int minIndex = findMinIndex(n, A);
+    int maxIndex = findMaxIndex(n, A);
+
+    int sumIndex = minIndex + maxIndex;
+
+    if (abs(sumIndex) < abs(A[minIndex])) {
+        printf("SumIndex < MinIndex \n");
+    }else if(abs(sumIndex) > abs(A[maxIndex])){
+        printf("SumIndex > MaxIndex \n");
+    }else printf("SumIndex = MaxIndex\n" ,000);
+
+
     printf("MinIndex: %d\n", minIndex);
 
-    int maxIndex = findMaxIndex(n, A);
     printf("MaxIndex: %d\n", maxIndex);
-    
-    int sumIndex = minIndex + findMaxIndex(n, A);
+
     printf("SumIndex: %d\n", sumIndex);
 
     int MaxNumber = A[maxIndex];
