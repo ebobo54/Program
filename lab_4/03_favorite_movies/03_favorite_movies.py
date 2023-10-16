@@ -16,3 +16,4 @@ my_favorite_movies = 'Терминатор, Пятый элемент, Ават�
 # как указано в задании!
 
 # TODO здесь ваш код
+print(my_favorite_movies[0:11], my_favorite_movies[42:57], my_favorite_movies[12:27], my_favorite_movies[35:40])

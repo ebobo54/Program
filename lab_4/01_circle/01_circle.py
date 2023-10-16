@@ -1,4 +1,4 @@
-Pi = 3.1415926
+cd Pi = 3.1415926
 radius = 42
 s = Pi * radius ** 2
 print('s=  ', s)

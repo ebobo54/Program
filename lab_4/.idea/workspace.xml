@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f0220748-5246-49fe-a5f4-18829edf0c47" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/01_circle/01_circle.py" beforeDir="false" afterPath="$PROJECT_DIR$/01_circle/01_circle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02_operations/02_operations.py" beforeDir="false" afterPath="$PROJECT_DIR$/02_operations/02_operations.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2Wpzi6PAnkiDh2z4D7MfMVTDXuA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f0220748-5246-49fe-a5f4-18829edf0c47" name="Default Changelist" comment="" />
+      <created>1697444435241</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1697444435241</updated>
+      <workItem from="1697444440643" duration="24000" />
+    </task>
+    <servers />
+  </component>
+</project>

@@ -32,9 +32,9 @@ void process(int n, int a[]) {
 
     int sumIndex = minIndex + maxIndex;
 
-    if (abs(sumIndex) < abs(a[minIndex])) {
+    if (abs(sumIndex) < abs(minIndex)) {
         a[minIndex] = sumIndex;
-    } else if (abs(sumIndex) > abs(a[maxIndex])) {
+    } else if (abs(sumIndex) > abs(maxIndex)) {
         a[maxIndex] = sumIndex;
     } else {
         int start = (minIndex < maxIndex) ? minIndex : maxIndex;
@@ -60,25 +60,21 @@ int main() {
 
     int sumIndex = minIndex + maxIndex;
 
-    if (abs(sumIndex) < abs(A[minIndex])) {
-        printf("SumIndex < MinIndex \n");
-    }else if(abs(sumIndex) > abs(A[maxIndex])){
+    if (abs(sumIndex) > abs(maxIndex)) {
         printf("SumIndex > MaxIndex \n");
-    }else printf("SumIndex = MaxIndex\n" ,000);
+    }else if(abs(sumIndex) < abs(minIndex)){
+        printf("SumIndex < MinIndex \n");
 
-
-    printf("MinIndex: %d\n", minIndex);
+    }else if (abs(sumIndex) == abs(minIndex)){
+    printf("SumIndex = MaxIndex\n" ,000);
+    }
 
     printf("MaxIndex: %d\n", maxIndex);
 
+    printf("MinIndex: %d\n", minIndex);
+
     printf("SumIndex: %d\n", sumIndex);
      
-     if (abs(sumIndex) < abs(A[minIndex])) {
-        printf("SumIndex < MinIndex \n");
-    }else if(abs(sumIndex) > abs(A[maxIndex])){
-        printf("SumIndex > MaxIndex \n");
-    }else printf("SumIndex = MaxIndex\n" ,000);
-
     int MaxNumber = A[maxIndex];
     printf("MaxNumber: %d\n", MaxNumber);
 
