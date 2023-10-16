@@ -4,3 +4,4 @@ s = Pi * radius ** 2
 print('s=  ', s)
 point = (23, 34)
 point_2 = (30, 30)
+print ((x * x + y * y) ** 0,5)
