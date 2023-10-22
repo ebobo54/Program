@@ -18,17 +18,15 @@ violator_songs_list = [
     ['Clean', 5.83],
 ]
 
-round('Halo'[2],1)
-round('Enjoy the Silence'[2],1)
-round('Clean'[2],1)
 # распечатайте общее время звучания трех песен: 'Halo', 'Enjoy the Silence' и 'Clean' в формате
 #   Три песни звучат ХХХ.XX минут
 # Обратите внимание, что делать много вычислений внутри print() - плохой стиль.
 # Лучше заранее вычислить необходимое, а затем в print(xxx, yyy, zzz)
 
 # TODO здесь ваш код
-sum('Halo'[2], 'Enjoy the Silence'[2], 'Clean'[2])
-print(sum)
+songs_to_sum = ['Halo', 'Enjoy the Silence', 'Clean']
+total_time = sum(violator_songs_dict[song] for song in songs_to_sum)
+print(f' {total_time:.2f} minut')
 # Есть словарь песен группы Depeche Mode
 violator_songs_dict = {
     'World in My Eyes': 4.76,
@@ -46,3 +44,6 @@ violator_songs_dict = {
 #   А другие три песни звучат ХХХ минут
 
 # TODO здесь ваш код
+other_songs = ['Sweetest Perfection', 'Policy of Truth', 'Blue Dress']
+other_total_time = sum(violator_songs_dict[song] for song in other_songs)
+print(f'{other_total_time:.2f} minut')
