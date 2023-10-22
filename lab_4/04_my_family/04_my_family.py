@@ -12,10 +12,12 @@ my_family_height = [
     # ['имя', рост],
     ['mama',190],['papa', 110],['babushka',10],['dedushka', 200]
 ]
-print(my_family_height[0],my_family_height[1],my_family_height[2],my_family_height[3])
 # Выведите на консоль рост отца в формате
 #   Рост отца - ХХ см
-
+for member in my_family_height:
+    if member[0] == 'papa':
+        print(f"Рост отца - {member[1]} см")
 # Выведите на консоль общий рост вашей семьи как сумму ростов всех членов
 #   Общий рост моей семьи - ХХ см
-sum(my_family_height)
+total_height = sum([member[1] for member in my_family_height])
+print(f"Общий рост моей семьи - {total_height} см")

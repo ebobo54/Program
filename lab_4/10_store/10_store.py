@@ -53,3 +53,31 @@ print('Лампа -', lamps_quantity, 'шт, стоимость', lamps_cost, '�
 # Это задание на ручное вычисление - что бы потом понять как работают циклы и насколько с ними проще жить.
 
 # TODO здесь ваш код
+table_code = goods['Стол']
+table_item_1 = store[table_code][0]
+table_item_2 = store[table_code][1]
+tables_quantity = table_item_1['quantity'] + table_item_2['quantity']
+tables_price_1 = table_item_1['price']
+tables_price_2 = table_item_2['price']
+tables_cost = (table_item_1['quantity'] * tables_price_1) + (table_item_2['quantity'] * tables_price_2)
+print('Стол -', tables_quantity, 'шт, стоимость', tables_cost, 'руб')
+
+sofa_code = goods['Диван']
+sofa_item_1 = store[sofa_code][0]
+sofa_item_2 = store[sofa_code][1]
+sofas_quantity = sofa_item_1['quantity'] + sofa_item_2['quantity']
+sofas_price_1 = sofa_item_1['price']
+sofas_price_2 = sofa_item_2['price']
+sofas_cost = (sofa_item_1['quantity'] * sofas_price_1) + (sofa_item_2['quantity'] * sofas_price_2)
+print('Диван -', sofas_quantity, 'шт, стоимость', sofas_cost, 'руб')
+
+chair_code = goods['Стул']
+chair_item_1 = store[chair_code][0]
+chair_item_2 = store[chair_code][1]
+chair_item_3 = store[chair_code][2]
+chairs_quantity = chair_item_1['quantity'] + chair_item_2['quantity'] + chair_item_3['quantity']
+chairs_price_1 = chair_item_1['price']
+chairs_price_2 = chair_item_2['price']
+chairs_price_3 = chair_item_3['price']
+chairs_cost = (chair_item_1['quantity'] * chairs_price_1) + (chair_item_2['quantity'] * chairs_price_2) + (chair_item_3['quantity'] * chairs_price_3)
+print('Стул -', chairs_quantity, 'шт, стоимость', chairs_cost, 'руб')
