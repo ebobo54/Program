@@ -1,26 +1,13 @@
-def find_numbers():
-    """
+import itertools
 
-    >>> find_numbers()
-    [(500008, 8, 4), (500016, 16, 2), (500024, 8, 4), (500032, 32, 2), (500040, 40, 5)]
-    """
-    numbers = []
-    current_number = 500001  # Начинаем с числа больше 500000
+letters = "ГЕПАРД"
 
-    while len(numbers) < 5:
-        divisors = []
-        for i in range(8, current_number):
-            if current_number % i == 0:
-                divisors.append(i)
-                if i % 10 == 8 and i != 8:
-                    numbers.append((current_number, i, current_number // i))
-                    break
-        current_number += 1
+count_valid_words = 0
 
-    return numbers
+combinations = itertools.product(letters, repeat=5)
 
+for combo in combinations:
+    if combo.count("Г") == 1 and combo[0] != "А" and combo[-1] != "Е":
+        count_valid_words += 1
 
-if __name__ == "__main":
-    result = find_numbers()
-    for number, divisor, quotient in result:
-        print(f"{number} {divisor} {quotient}")
+print(f"Количество допустимых слов: {count_valid_words}")

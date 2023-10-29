@@ -1,6 +1,7 @@
 def find_numbers():
     numbers = []
     current_number = 500001
+
     while len(numbers) < 5:
         divisors = []
         for i in range(8, current_number):
