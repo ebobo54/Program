@@ -1,18 +1,13 @@
-import matplotlib.pyplot as plt
-x = np.linspace(0, 10, 50)
-y1 = x
-# Квадратичная зависимость
-y2 = [i**2 for i in x]
-# Построение графиков
-plt.figure(figsize=(9, 9))
-plt.subplot(2, 1, 1)
-plt.plot(x, y1) # построение графика
-plt.title('Зависимости: y1 = x, y2 = x^2') # заголовок
-plt.ylabel('y1', fontsize=14) # ось ординат
-plt.grid(True) # включение отображение сетки
-plt.subplot(2, 1, 2)
-plt.plot(x, y2) # построение графика
-plt.xlabel('x', fontsize=14) # ось абсцисс
-plt.ylabel('y2', fontsize=14) # ось ординат
-plt.grid(True) # включение отображение сетки
-plt.show()
+import pandas as pd
+
+us_cities = pd.read_csv("https://raw.githubusercontent.com/plotly/datasets/master/us-cities-top-1k.csv")
+us_cities = us_cities.query("State in ['New York', 'Ohio']")
+
+import plotly.express as px
+
+fig = px.line_mapbox(us_cities, lat="lat", lon="lon", color="State", zoom=3, height=300)
+
+fig.update_layout(mapbox_style="stamen-terrain", mapbox_zoom=4, mapbox_center_lat = 41,
+    margin={"r":0,"t":0,"l":0,"b":0})
+
+fig.show()
