@@ -1,2 +1,1 @@
-# Prog
-cd
+# lab_5
