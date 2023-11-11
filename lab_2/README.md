@@ -79,10 +79,11 @@ int main()
 ![](E.png)
 ___
 ### График функции
-![](R.jpg)
+![](PLOT.png)
 ---
 ### Блок-схема
 ![](qwerty.png)
+![](qwert.png)
 
 ---
 

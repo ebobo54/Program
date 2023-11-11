@@ -9,17 +9,19 @@ int main()
     printf("Enter number-> ");
     scanf("%lf", &s);
     int n;
-    n=2/s+1;
+    int k;
+    k = 0;
+    n = 2 / s;
 
-    while(n)
+    while(n >= k)
     {
         if (x >= 0 && x <= 1)
             y = cos(x + pow(x, 3));
         if (x > 1 && x <= 2)
-            y = exp(-pow(x, 2) - pow(x, 2) + 2 * x);
+            y = exp(-x*x) - (x*x) + 2 * x;
         printf("%lf %lf\n", x, y);
         x += s;
-        n = n - 1;
+        k++;
     }
     return 0;
 }
