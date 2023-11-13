@@ -1,4 +1,6 @@
-# x and y given as array_like objects
-import plotly.express as px
-fig = px.scatter(x=[0, 1, 2, 3, 4], y=[0, 1, 4, 9, 16])
-fig.show()
+import matplotlib.pyplot as plt
+plt.title('Линейная зависимость y = x') # заголовок
+plt.xlabel('x') # ось абсцисс
+plt.ylabel('y') # ось ординат
+plt.grid() # включение отображение сетки
+plt.plot(x, y, 'r--') # построение графика
