@@ -25,8 +25,8 @@ violator_songs_list = [
 
 # TODO здесь ваш код
 songs_to_sum = ['Halo', 'Enjoy the Silence', 'Clean']
-total_time = sum(violator_songs_dict[song] for song in songs_to_sum)
-print(f' {total_time:.2f} minut')
+total_time = sum(song[1] for song in violator_songs_list if song[0] in songs_to_sum)
+print(f'Три песни звучат {total_time:.2f} минут')
 # Есть словарь песен группы Depeche Mode
 violator_songs_dict = {
     'World in My Eyes': 4.76,
@@ -46,4 +46,4 @@ violator_songs_dict = {
 # TODO здесь ваш код
 other_songs = ['Sweetest Perfection', 'Policy of Truth', 'Blue Dress']
 other_total_time = sum(violator_songs_dict[song] for song in other_songs)
-print(f'{other_total_time:.2f} minut')
+print(f'Другие три песни звучат {other_total_time:.2f} минут')
