@@ -19,11 +19,9 @@ for n in range(number):
         ''.join(random.choice(chars) for _ in range(length - num - special))
     )
 
-    # Shuffle all the characters
     shuffled_chars = list(all_chars)
     random.shuffle(shuffled_chars)
 
-    # Join the shuffled characters to form the password
     password = ''.join(shuffled_chars)
     
     print(password)

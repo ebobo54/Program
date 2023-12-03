@@ -30,7 +30,6 @@ def test_password_alphanumeric():
     password = lab_9.generate_password(length, num, special)
     assert all(c.isalnum() or c in '+-/*!&$#?=@<>' for c in password)
 
-# Дополнительные тесты с использованием параметризации
 @pytest.mark.parametrize("length, num, special", [
     (8, 2, 1),
     (10, 4, 2),
