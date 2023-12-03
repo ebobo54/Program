@@ -1,0 +1,31 @@
+Input: a = 11
+Input: b = 22
+Output: 6
+Input: a = 11
+Input: b = 22
+Output: 6
+Input: a = 11
+Input: b = 22
+Output: 6
+Input: a = 112
+Input: b = 2131
+Output: 11
+Input: a = 123
+Input: b = 123
+Output: sum numbers = b 6
+Input: a = 123
+Input: b = 123
+Output: sum numbers = b 6
+Input: a = 123
+Input: b = 1321
+Output: 13
+Input: a = 321
+Input: b = 132
+Output: sum numbers = b 6
+Input: a = 123
+Input: b = 123
+Output: sum numbers = b 6
+Input: a = 312
+Input: b = 312
+Output: sum numbers = b 6
+Input: a = 0
