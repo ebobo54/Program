@@ -15,7 +15,8 @@
 ## Скриншоты результатов
 1.
 ![](Q.png)
-2
+
+2.
 ![](W.png)
 ## Ссылки на используемые материалы
 1. [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/)
