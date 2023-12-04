@@ -16,3 +16,13 @@
 Функция для нахождения пересечения двух списков.
 
 Функция для расчёта x=sqrt(3+sqrt(3+sqrt(3+sqrt)))
+
+## Скриншоты результатов
+1.
+![](Q.png)
+2
+![](W.png)
+
+## Ссылки на используемые материалы
+1. [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/)
+2. [Прог. Лабораторная работа №3](https://evil-teacher.on.fleek.co/prog_pm/lab07/)
