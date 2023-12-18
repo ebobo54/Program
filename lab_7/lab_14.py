@@ -1,5 +1,5 @@
 def nested_sqrt_recursive(n):
-    if n == 0:
+    if n == 1:
         return 3
     else:
         return (3 + nested_sqrt_recursive(n - 1)) ** 0.5
