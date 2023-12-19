@@ -7,29 +7,11 @@
 # combinations = itertools.product(letters, repeat=5)
 
 # for combo in combinations:
-#     if combo.count("Г") == 1 and combo[0] != "А" and combo[4] != "Е":
+#     if combo.count("Г") == 1 and combo[0] != "А" and combo[-1] != "Е":
 #         count += 1
-        
 
 # print(f"Количество допустимых слов: {count}")
 
-# import itertools
-
-# letters = "ГЕПАРД"
-
-# count = 0
-
-# combinations = itertools.product(letters, repeat=5)
-
-# for combo in combinations:
-#     if combo.count("Г") == 1:
-#         continue
-#     if combo[0] != "А":
-#         continue
-#     if combo[-1] != "Е":
-#         continue
-#     count += 1
-        
 
 # print(f"Количество допустимых слов: {count}")
 # import itertools
@@ -43,3 +25,40 @@
 #     return count # возвращение значения(количество слов)
 # word_count = A() # сохраняем результат в переменной
 # print("№1. КОЛИЧЕСТВО СЛОВ:", word_count)
+# import itertools
+
+# letters = "ГЕПАРД"
+
+# count = 0
+
+# combinations = itertools.product(letters, repeat=5)
+
+# for combo in combinations:
+#     if combo.count("Г") == 1:
+#         continue
+#     if combo[0] == "А":
+#         continue
+#     if combo[-1] == "Е":
+#         continue
+#     count += 1
+
+# print(f"Количество допустимых слов: {count}")
+
+import itertools
+
+letters = "ГЕПАРД"
+
+count = 0
+
+combinations = itertools.product(letters, repeat=5)
+
+for combo in combinations:
+    if combo.count("Г") != 1:
+        continue
+    if combo[0] == "А":
+        continue
+    if combo[-1] == "Е":
+        continue
+    count += 1
+
+print(f"Количество допустимых слов: {count}")
