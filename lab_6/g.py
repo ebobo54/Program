@@ -44,31 +44,15 @@
 
 # print(f"Количество допустимых слов: {count}")
 
-# import itertools
-
-# letters = "ГЕПАРД"
-
-# count = 0
-
-# combinations = itertools.product(letters, repeat=5)
-
-# for combo in combinations:
-#     if combo.count("Г") != 1:
-#         continue
-#     if combo[0] == "А":
-#         continue
-#     if combo[-1] == "Е":
-#         continue
-#     count += 1
-
-# print(f"Количество допустимых слов: {count}")
-
-from itertools import permutations
+import itertools
 
 letters = "ГЕПАРД"
+
 count = 0
 
-for combo in permutations(letters, 5):
+combinations = itertools.product(letters, repeat=5)
+
+for combo in combinations:
     if combo.count("Г") != 1:
         continue
     if combo[0] == "А":
@@ -77,5 +61,21 @@ for combo in permutations(letters, 5):
         continue
     count += 1
 
-print("Количество слов:", count)
+print(f"Количество допустимых слов: {count}")
+
+# from itertools import permutations
+
+# letters = "ГЕПАРД"
+# count = 0
+
+# for combo in permutations(letters, 5):
+#     if combo.count("Г") != 1:
+#         continue
+#     if combo[0] == "А":
+#         continue
+#     if combo[-1] == "Е":
+#         continue
+#     count += 1
+
+# print("Количество слов:", count)
 
