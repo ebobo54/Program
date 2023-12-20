@@ -78,6 +78,39 @@
     
 #     print(password)
 
+# import random
+# import string
+
+# def password_generator(number, length, num, special):
+#     chars = string.ascii_letters
+#     digits = string.digits
+#     special_chars = '+-/*!&$#?=@<>'
+
+#     for n in range(number):
+#         # Генерация случайного количества цифр, специальных символов и букв
+#         num_chars = ''.join(random.choice(digits) for _ in range(num))
+#         special_chars = ''.join(random.choice(special_chars) for _ in range(special))
+#         other_chars = ''.join(random.choice(chars) for _ in range(length - num - special))
+
+#         # Объединение всех сгенерированных символов
+#         all_chars = num_chars + special_chars + other_chars
+
+#         # Перемешивание символов
+#         shuffled_chars = list(all_chars)
+#         random.shuffle(shuffled_chars)
+
+#         # Формирование пароля
+#         password = ''.join(shuffled_chars)
+#         yield password
+
+# number = int(input('Введите количество паролей:\n'))
+# length = int(input('Введите длину пароля:\n'))
+# num = int(input('Введите желаемое количество цифр в пароле:\n'))
+# special = int(input('Введите желаемое количество специальных символов:\n'))
+
+# for password in password_generator(number, length, num, special):
+#     print(password)
+
 import random
 
 def password_generator(number, length, num, special):
