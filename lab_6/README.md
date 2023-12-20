@@ -10,11 +10,11 @@
 
 ## Скриншоты результатов
 1.
-![](Q.png)
-2. 
-![](W.png)
-3. 
 ![](E.png)
+2. 
+![](Q.png)
+3. 
+![](W.png)
 ## Ссылки на используемые материалы
 1. [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/)
 2. [Прог. Лабораторная работа №3](https://evil-teacher.on.fleek.co/prog_pm/lab06/)
