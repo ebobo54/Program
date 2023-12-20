@@ -190,19 +190,20 @@ import numpy as np
 
 #19
 # locs = ['best', 'upper right', 'upper left', 'lower left',
-#         'lower right', 'right', 'center left', 'center right',
-#         'lower center', 'upper center', 'center']
-# plt.figure(figsize=(12, 12))
+# 'lower right', 'right', 'center left', 'center right',
+# 'lower center', 'upper center', 'center', 'center2' ]
+# plt.figure(figsize=(13, 13))
 # for i in range(3):
 #     for j in range(4):
-#         if i*4+j < 11:
-#             plt.subplot(3, 4, i*4+j+1)
-#             plt.title(locs[i*4+j])
-#             plt.plot(x, y1, 'o-r', label='line 1')
-#             plt.plot(x, y2, 'o-.g', label='line 2')
-#             plt.legend(loc=locs[i*4+j])
-#         else:
-#             break
+#          if i*4+j < 12:
+#               plt.subplot(3, 4, i*4+j+1)
+#               plt.title(locs[i*4+j])
+#               plt.plot(x, y1, 'o-r', label='line 1')
+#               plt.plot(x, y2, 'o-.g', label='line 2')
+#               plt.legend(loc=locs[i*3+j])
+#          else:
+#               break
+#          plt.show()
 # 20
 # x = [1, 5, 10, 15, 20]
 # y1 = [1, 7, 3, 5, 11]
@@ -361,24 +362,25 @@ import numpy as np
 # if ofs_y == 0.75: ofs_y = 0
 # else: ofs_y += 0.15
 # 32
-# import math
-# fig, axs = plt.subplots(2, 3, figsize=(12, 7))
-# conn_style=[
+#import math
+#fig, axs = plt.subplots(2, 3, figsize=(12, 7))
+#conn_style=[
 #    'angle,angleA=90,angleB=0,rad=0.0',
 #    'angle3,angleA=90,angleB=0',
 #    'arc,angleA=0,angleB=0,armA=0,armB=40,rad=0.0',
 #    'arc3,rad=-1.0',
 #    'bar,armA=0.0,armB=0.0,fraction=0.1,angle=70',
 #    'bar,fraction=-0.5,angle=180',
-# ]
-# for i in range(2):
+#]
+#for i in range(2):
 #    for j in range(3):
 #        axs[i, j].text(0.1, 0.5, '\n'.join(conn_style[i*3+j].split(',')))
 #        axs[i, j].annotate('text', xy=(0.2, 0.2), xycoords='data',
 #            xytext=(0.7, 0.8), textcoords='data',
 #            arrowprops=dict(arrowstyle='->',
-# connectionstyle=conn_style[i*3+j]))
+#connectionstyle=conn_style[i*3+j]))
 #        plt.show()  
+
 
 # 33
 # plt.title('Title', alpha=0.5, color='r', fontsize=18, fontstyle='italic',
@@ -387,38 +389,38 @@ import numpy as np
 # plt.show()
 
 # 34
-# import numpy as np
-# np.random.seed(123)
-# vals = np.random.randint(10, size=(7, 7))
-# plt.pcolor(vals)
+#import numpy as np
+#np.random.seed(123)
+#vals = np.random.randint(10, size=(7, 7))
+#plt.pcolor(vals)
 # 35
-# np.random.seed(123)
-# vals = np.random.randint(10, size=(7, 7))
-# plt.pcolor(vals)
-# plt.colorbar()
+#np.random.seed(123)
+#vals = np.random.randint(10, size=(7, 7))
+#plt.pcolor(vals)
+#plt.colorbar()
 
 # 36
-# np.random.seed(123)
-# vals = np.random.randint(10, size=(7, 7))
-# plt.pcolor(vals, cmap=plt.get_cmap('viridis', 11) )
-# plt.colorbar()
+#np.random.seed(123)
+#vals = np.random.randint(10, size=(7, 7))
+#plt.pcolor(vals, cmap=plt.get_cmap('viridis', 11) )
+#plt.colorbar()
  
 # 37
-# from mpl_toolkits.axes_grid1.inset_locator import inset_axes
-# np.random.seed(123)
-# vals = np.random.randint(11, size=(7, 7))
-# fig, ax = plt.subplots()
-# gr = ax.pcolor(vals)
-# axins = inset_axes(ax, width="7%", height="50%", loc='lower left',
-# bbox_to_anchor=(1.05, 0., 1, 1), bbox_transform=ax.transAxes,
-# borderpad=0)
-# plt.colorbar(gr, cax=axins)
+#from mpl_toolkits.axes_grid1.inset_locator import inset_axes
+#np.random.seed(123)
+#vals = np.random.randint(11, size=(7, 7))
+#fig, ax = plt.subplots()
+#gr = ax.pcolor(vals)
+#axins = inset_axes(ax, width="7%", height="50%", loc='lower left',
+#bbox_to_anchor=(1.05, 0., 1, 1), bbox_transform=ax.transAxes,
+#borderpad=0)
+#plt.colorbar(gr, cax=axins)
 
 # 38
-# import numpy as np
-# np.random.seed(123)
-# vals = np.random.randint(10, size=(7, 7))
-# plt.pcolor(vals, cmap=plt.get_cmap('viridis', 11))
-# plt.colorbar(orientation='horizontal',
-#  shrink=0.9, extend='max', extendfrac=0.2,
-#  extendrect=False, drawedges=False)
+import numpy as np
+np.random.seed(123)
+vals = np.random.randint(10, size=(7, 7))
+plt.pcolor(vals, cmap=plt.get_cmap('viridis', 11))
+plt.colorbar(orientation='horizontal',
+ shrink=0.9, extend='max', extendfrac=0.2,
+ extendrect=False, drawedges=False)
