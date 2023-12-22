@@ -1,11 +1,5 @@
-def intersect_with_duplicates(list1, list2):
-    result = []
-    for item in list1:
-        if item in list2:
-            result.append(item)
-            list2.remove(item)
-    return result
+# module7.py
 
-print(intersect_with_duplicates([1, 2, 3, 4], [2, 3, 4, 6, 8])) 
-print(intersect_with_duplicates([5, 8, 2], [2, 9, 1]))            
-print(intersect_with_duplicates([5, 8, 2], [7, 4]))  
+def run_logic(arg1: int, arg2: str):
+    # Логика для лабораторной работы №7
+    print(f"Running logic for module7 with arg1={arg1} and arg2={arg2}")
