@@ -34,8 +34,8 @@ def game_vnesh():
         smallfont = pygame.font.SysFont(None, 35)
         text = smallfont.render("Нажмите стрелку вверх для перезапуска или стрелку вниз для выхода", True, white)
         dis.blit(text, [dis_width / 5, dis_height / 1.5])
-
-    def game():
+    return dis_width, dis_height, snake_block, snake_speed, dis,blue,green,red,our_snake,Your_score,Your_choice
+def game(dis_width, dis_height, snake_block, snake_speed, dis,blue,green,red,our_snake ,Your_score,Your_choice):
         game_over = False
         game_close = False
 
@@ -119,8 +119,5 @@ def game_vnesh():
 
         pygame.quit()
         quit()
-
-    game()
-
-if __name__ == "__main__":
-    game_vnesh()
+dis_width, dis_height, snake_block, snake_speed, dis, blue, green,red, our_snake =game_vnesh()
+game(dis_width, dis_height, snake_block, snake_speed, dis,blue, green,red,our_snake)
