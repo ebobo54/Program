@@ -100,7 +100,7 @@
 #### Вариант 4.
 $$ f(n) =
  \begin{cases}
- \pow(8x,3)cosx - \sqrt{x} - \frac{1}{2}, & \quad 0 \leq x \leq 1; \\
+ pow(8x,3)cosx - \sqrt{x} - \frac{1}{2}, & \quad 0 \leq x \leq 1; \\
 e^{-x-\frac{1}{x}}, & \quad 1 < x \leq 2.
 \end{cases}
 $$
