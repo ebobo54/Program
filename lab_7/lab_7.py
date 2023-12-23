@@ -31,6 +31,40 @@
 # print(intersect_with_duplicates([5, 8, 2], [2, 9, 1]))            
 # print(intersect_with_duplicates([5, 8, 2], [7, 4]))  
 
+# from collections import Counter
+
+# def intersect_recursive(list1, list2):
+#     if not list1 or not list2:
+#         return []
+    
+#     head, *tail = list1
+#     if head in list2:
+#         list2.remove(head)
+#         return [head] + intersect_recursive(tail, list2)
+#     else:
+#         return intersect_recursive(tail, list2)
+
+# def intersect_non_recursive(list1, list2):
+#     result = []
+#     counter_list1 = Counter(list1)
+#     counter_list2 = Counter(list2)
+    
+#     for item in (counter_list1 & counter_list2).elements():
+#         result.extend([item] * min(counter_list1[item], counter_list2[item]))
+
+#     return result
+
+# # Результаты для intersect_recursive
+# print(intersect_recursive([1, 2, 3, 4], [2, 3, 4, 6, 8]))  
+# print(intersect_recursive([5, 8, 2], [2, 9, 1]))          
+# print(intersect_recursive([5, 8, 2], [7, 4]))              
+
+# # Результаты для intersect_non_recursive
+# print(intersect_non_recursive([1, 2, 3, 4], [2, 3, 4, 6, 8])) 
+# print(intersect_non_recursive([5, 8, 2], [2, 9, 1]))            
+# print(intersect_non_recursive([5, 8, 2], [7, 4]))
+
+
 from collections import Counter
 
 def intersect_with_duplicates(list1, list2):
