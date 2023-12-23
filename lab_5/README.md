@@ -100,8 +100,8 @@
 #### Вариант 4.
 $$ f(n) =
  \begin{cases}
-\pow{x,3} - \cos{x} , & \quad 0 \leq x \leq 1; \\
-\log{1+\sqrt{x}} - \cos{x}, & \quad 1 < x \leq 2;
+    \pow{x,3} - \cos{x} , & \quad 0 \leq x \leq 1; \\
+    \log{1+\sqrt{x}} - \cos{x}, & \quad 1 < x \leq 2;
 \end{cases}
 $$
 
