@@ -16,7 +16,7 @@
 Функция для нахождения пересечения двух списков.
 
 $$ x(n) =
- \begin{cases}\sqrt{3+\sqrt{3+\sqrt{3+\sqrt{3}}}}
+ \begin{cases}\sqrt{3+\sqrt{3+\sqrt{3+\sqrt{...+\sqrt{3}}}}}
 \end{cases}
 $$
 
