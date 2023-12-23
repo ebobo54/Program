@@ -1,3 +1,31 @@
+# import typer
+# from my_package import module7, module8, module9
+
+# app = typer.Typer()
+
+# @app.command()
+# def run_module7(arg1: int, arg2: str):
+#     module7.run_logic(arg1, arg2)
+
+# @app.command()
+# def run_module8(option1: bool = False):
+#     module8.run_logic(option1)
+
+# @app.command()
+# def run_module9():
+#     module9.run_logic()
+
+# if __name__ == "__main__":
+# # Запуск модуля7
+# python main.py run_module7 --arg1 42 --arg2 "Hello"
+
+# # Запуск модуля8
+# python main.py run_module8 --option1
+
+# # Запуск модуля9
+# python main.py run_module9
+
+
 import typer
 
 from my_package import module7
@@ -24,11 +52,6 @@ if __name__ == "__main__":
      app()
 
 
-# # Запуск модуля7
-# python main.py run_module7 --arg1 42 --arg2 "Hello"
-
-# # Запуск модуля8
-# python main.py run_module8 --option1
-
-# # Запуск модуля9
-# python main.py run_module9
+# python main.py foo 5
+# python main.py foo2 10 2
+# python main.py foo3
