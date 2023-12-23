@@ -110,7 +110,7 @@ $$ f(n) =
 e^{-x-\frac{1}{x}}, & \quad 1 < x \leq 2.
 \end{cases}
 $$
-![](Figure.png)
+![](Figure_1.png)
 ## Ссылки на используемые материалы
 1. [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/)
 2. [Прог. Лабораторная работа №5](https://evil-teacher.on.fleek.co/prog_pm/lab05/)
