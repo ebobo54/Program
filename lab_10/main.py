@@ -9,7 +9,7 @@ app = typer.Typer()
 
 @app.command()
 def foo(i: int):
-    print(f'i: {i}\n', module7.func(i))
+    print(f'i: {i}\n', module9.func(i))
 
 
 @app.command()
@@ -18,7 +18,7 @@ def foo2(a: int, b: int):
 
 @app.command()
 def foo3(lst: list, n: int):
-    print(f'lst: {lst}, n: {n}\n', module9.split(lst, n))
+    print(f'lst: {lst}, n: {n}\n', module7.split(lst, n))
 
 if __name__ == "__main__":
      app()
