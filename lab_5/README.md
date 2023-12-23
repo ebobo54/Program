@@ -105,13 +105,6 @@ $$ f(n) =
 \end{cases}
 $$
 
-$$ f(n) =
- \begin{cases}
- \sqrt{x+1} - \sqrt{x} - \frac{1}{2}, & \quad 0 \leq x \leq 1; \\
-e^{-x-\frac{1}{x}}, & \quad 1 < x \leq 2.
-\end{cases}
-$$
-
 ![](Figure_1.png)
 ## Ссылки на используемые материалы
 1. [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/)
