@@ -88,12 +88,12 @@ def intersect_non_recursive(list1, list2):
 
     return result
 
-# Результаты для intersect_recursive
-print(intersect_with_duplicates([1,2, 2, 3, 4], [2, 3, 4, 6, 8,2]))  
+# Результаты для recursive
+print(intersect_with_duplicates([1, 2, 3, 4], [2, 3, 4, 6, 8]))  
 print(intersect_with_duplicates([5, 8, 2], [2, 9, 1]))          
 print(intersect_with_duplicates([5, 8, 2], [7, 4]))              
 
-# Результаты для intersect_non_recursive
-print(intersect_non_recursive([2,1, 2, 3, 4], [2, 3, 4, 6, 8,2])) 
+# Результаты для non_recursive
+print(intersect_non_recursive([1, 2, 3, 4], [2, 3, 4, 6, 8])) 
 print(intersect_non_recursive([5, 8, 2], [2, 9, 1]))            
 print(intersect_non_recursive([5, 8, 2], [7, 4]))
