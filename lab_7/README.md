@@ -15,8 +15,8 @@
 ## Условие задачи 
 Функция для нахождения пересечения двух списков.
 
-$$ f(n) =
- \begin{cases} xт=\sqrt{3+\sqrt{3+\sqrt{3+\sqrt{3}}}}
+$$ x(n) =
+ \begin{cases}\sqrt{3+\sqrt{3+\sqrt{3+\sqrt{3}}}}
 \end{cases}
 $$
 
