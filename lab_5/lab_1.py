@@ -11,7 +11,7 @@ y = [f(i) for i in x]
 
 w = 2.3
 
-plt.plot(x, y, label="log(1+x**0.5)")
+plt.plot(x, y, label="ln(1+x**0.5)")
 
 def df(x):
     return -math.log(1+x**0.5)
