@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 def f(x):
-    return math.log(1+x**0.5)
+    return math.pow(8*x,3)-math.cos(x)
 
 x = np.linspace(1, 4, 100)
 
@@ -11,10 +11,10 @@ y = [f(i) for i in x]
 
 w = 2.3
 
-plt.plot(x, y, label="ln(1+x**0.5)")
+plt.plot(x, y, label="pow(8*x,3)-cos(x)")
 
 def df(x):
-    return -math.log(1+x**0.5)
+    return math.pow(9*x,3)
 
 tangent_slope = df(w)
 
@@ -24,10 +24,69 @@ plt.plot(x, tangent, label="касательная x=2.3")
 plt.plot(w, f(w), "ro")
 
 plt.xlabel('x')
-plt.ylabel('y')
 plt.legend()
 
 plt.show()
+
+# import mathimport math
+# import matplotlib.pyplot as plt
+# import numpy as np
+
+# def f(x):
+#     return math.log(1+x**0.5)
+
+# x = np.linspace(1, 4, 100)
+
+# y = [f(i) for i in x]
+
+# w = 2.3
+
+# plt.plot(x, y, label="ln(1+x**0.5)")
+
+# def df(x):
+#     return -math.log(1+x**0.5)
+
+# tangent_slope = df(w)
+
+# tangent = [f(w) + tangent_slope*(i - w) for i in x]
+
+# plt.plot(x, tangent, label="касательная x=2.3")
+# plt.plot(w, f(w), "ro")
+
+# plt.xlabel('x')
+# plt.ylabel('y')
+# plt.legend()
+
+# plt.show()
+# import matplotlib.pyplot as plt
+# import numpy as np
+
+# def f(x):
+#     return math.log(1+x**0.5)
+
+# x = np.linspace(1, 4, 100)
+
+# y = [f(i) for i in x]
+
+# w = 2.3
+
+# plt.plot(x, y, label="ln(1+x**0.5)")
+
+# def df(x):
+#     return -math.log(1+x**0.5)
+
+# tangent_slope = df(w)
+
+# tangent = [f(w) + tangent_slope*(i - w) for i in x]
+
+# plt.plot(x, tangent, label="касательная x=2.3")
+# plt.plot(w, f(w), "ro")
+
+# plt.xlabel('x')
+# plt.ylabel('y')
+# plt.legend()
+
+# plt.show()
 
 # import math
 # import matplotlib.pyplot as plt
