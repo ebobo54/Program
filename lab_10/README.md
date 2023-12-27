@@ -5,7 +5,18 @@
 
 
 ## Скриншоты результатов
-![](1.png)
+### lab7
+![](Q.png)
+
+---
+
+### lab8
+![](W.png)
+
+---
+
+### lab9
+![](E.png)
 
 ## Ссылки на используемые материалы
 1. [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/)
