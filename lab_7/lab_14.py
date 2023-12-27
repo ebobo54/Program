@@ -25,5 +25,5 @@ def nested_sqrt_non_recursive(n):
         result = (3 + result) ** 0.5
     return result
 
-print(nested_sqrt_recursive(3))
-print(nested_sqrt_non_recursive(3))
+print(nested_sqrt_recursive(1))
+print(nested_sqrt_non_recursive(1))

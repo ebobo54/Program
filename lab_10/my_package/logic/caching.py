@@ -1,3 +1,4 @@
+# logic/caching.py
 def cache_decorator(func):
     cache = {}
 
@@ -17,20 +18,3 @@ def cache_decorator(func):
         return result
 
     return wrapper
-
-@cache_decorator
-def fibonacci_closure():
-    a, b = 0, 1
-
-    def generate_fibonacci():
-        nonlocal a, b
-        result = a
-        a, b = b, a + b
-        return result
-
-    return generate_fibonacci
-
-fibonacci_gen = fibonacci_closure()
-
-for _ in range(10):
-    print(fibonacci_gen())

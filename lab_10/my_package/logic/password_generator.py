@@ -1,3 +1,4 @@
+# logic/password_generator.py
 import random
 
 def password_generator(number, length, num, special):
@@ -15,11 +16,3 @@ def password_generator(number, length, num, special):
 
         password = ''.join(shuffled_chars)
         yield password
-
-number = int(input('Введите количество паролей:\n'))
-length = int(input('Введите длину пароля:\n'))
-num = int(input('Введите желаемое количество цифр в пароле:\n'))
-special = int(input('Введите желаемое количество специальных символов:\n'))
-
-for password in password_generator(number, length, num, special):
-    print(password)
