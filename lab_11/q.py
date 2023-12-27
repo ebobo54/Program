@@ -1,18 +1,20 @@
 import pygame
 import time
 import random
-import pygame
-from r import game_vnesh
-dis_width, dis_height, snake_block, snake_speed, dis, blue, green, red, our_snake, Your_score, Your_choice = game_vnesh()
+# from r import game_vnesh
+# dis_width, dis_height, snake_speed,  blue, green, red, Your_score, Your_choice, snake_head, snake_List = game_vnesh()
+from r import *
 
 def game():
-    dis_width, dis_height, snake_block, snake_speed, dis, blue, green, red, our_snake, Your_score, Your_choice = game_vnesh() 
+    # dis_width, dis_height, snake_speed,  blue, green, red, Your_score, Your_choice,snake_head, snake_head.append, snake_List.append = game_vnesh() 
     game_over = False
     game_close = False
-
+    font_style = pygame.font.SysFont(None, 50)
+    score_font = pygame.font.SysFont(None, 35)
     x1 = dis_width / 2
     y1 = dis_height / 2
-
+    dis = pygame.display.set_mode((dis_width, dis_height))
+    pygame.display.set_caption('Змейка на Python')
     x1_change = 0
     y1_change = 0
 
@@ -65,10 +67,10 @@ def game():
         y1 += y1_change
         dis.fill(blue)
         pygame.draw.rect(dis, red, [foodx, foody, snake_block, snake_block])
-        snake_head = []
-        snake_head.append(x1)
-        snake_head.append(y1)
-        snake_List.append(snake_head)
+        def our_snake(snake_block, snake_list):
+            for x in snake_list:
+                pygame.draw.rect(dis, green, [x[0], x[1], snake_block, snake_block])
+
         if len(snake_List) > Length_of_snake:
             del snake_List[0]
 

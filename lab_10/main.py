@@ -105,24 +105,27 @@ def run_intersection(
 
     print("Intersection Result:", result)
 
+
+
+
 @app.command()
 def run_caching():
-    @cache_decorator
     def fibonacci_closure():
-        a, b = 0, 1
-
-        def generate_fibonacci():
+        a, b = 0, 1 
+        @cache_decorator
+        def generate_fibonacci(n):
             nonlocal a, b
-            result = a
-            a, b = b, a + b
-            return result
-
+            for i in range(2,n):
+                a,b=b,a+b
+            return b
         return generate_fibonacci
-
+        
     fibonacci_gen = fibonacci_closure()
-
-    for _ in range(10):
-        print(fibonacci_gen())
+    
+    for i in range(10):
+        print(fibonacci_gen(i))
+    print(fibonacci_gen(5))
+ 
 
 @app.command()
 def run_password_generator(

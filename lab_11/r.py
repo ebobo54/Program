@@ -1,8 +1,6 @@
-import pygame
 import time
 import random
 
-pygame.init()
 
 def game_vnesh():
     white = (255, 255, 255)
@@ -13,19 +11,18 @@ def game_vnesh():
     blue = (50, 153, 213)
     dis_width = 800
     dis_height = 600
-    dis = pygame.display.set_mode((dis_width, dis_height))
-    pygame.display.set_caption('Змейка на Python')
-
+    snake_List = []
+    Length_of_snake = 1
     snake_block = 10
     snake_speed = 15
+    x1 = dis_width / 2
+    y1 = dis_height / 2
+    snake_head = []
+    snake_head.append(x1)
+    snake_head.append(y1)
+    snake_List.append(snake_head)
 
-    font_style = pygame.font.SysFont(None, 50)
-    score_font = pygame.font.SysFont(None, 35)
-
-    def our_snake(snake_block, snake_list):
-        for x in snake_list:
-            pygame.draw.rect(dis, green, [x[0], x[1], snake_block, snake_block])
-
+    
     def Your_score(score):
         value = score_font.render("Счет: " + str(score), True, white)
         dis.blit(value, [0, 0])
@@ -35,4 +32,4 @@ def game_vnesh():
         text = smallfont.render("Нажмите стрелку вверх для перезапуска или стрелку вниз для выхода", True, white)
         dis.blit(text, [dis_width / 5, dis_height / 1.5])
     
-    return dis_width, dis_height, snake_block, snake_speed, dis, blue, green, red, our_snake, Your_score, Your_choice
+    return dis_width, dis_height, snake_speed, blue, green, red,  Your_score, Your_choice, snake_head, snake_head.append, snake_List.append
