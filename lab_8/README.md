@@ -18,6 +18,9 @@
 
 2.
 ![](W.png)
+
+3.
+![](E.png)
 ## Ссылки на используемые материалы
 1. [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/)
 2. [Прог. Лабораторная работа №3](https://evil-teacher.on.fleek.co/prog_pm/lab08/)
