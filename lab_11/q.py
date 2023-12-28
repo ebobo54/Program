@@ -18,7 +18,9 @@ def game():
     pygame.display.set_caption('Змейка на Python')
     x1_change = 0
     y1_change = 0
-
+    def our_snake(snake_block, snake_list):
+            for x in snake_list:
+                pygame.draw.rect(dis, green, [x[0], x[1], snake_block, snake_block])
     snake_List = []
     Length_of_snake = 1
 
@@ -31,7 +33,7 @@ def game():
             dis.fill(blue)
             Your_score(dis, Length_of_snake - 1)  
             Your_choice(dis)
-            pygame.display.flip()
+            pygame.display.update()
 
             for event in pygame.event.get():
                 if event.type == pygame.KEYDOWN:
@@ -68,10 +70,8 @@ def game():
         y1 += y1_change
         dis.fill(blue)
         pygame.draw.rect(dis, red, [foodx, foody, snake_block, snake_block])
-        
-        def our_snake(snake_block, snake_list):
-            for x in snake_list:
-                pygame.draw.rect(dis, green, [x[0], x[1], snake_block, snake_block])
+        snake_head = [x1, y1]
+        snake_List.append(snake_head)
 
         if len(snake_List) > Length_of_snake:
             del snake_List[0]
@@ -80,7 +80,7 @@ def game():
             if x == snake_head:
                 game_close = True
         our_snake(snake_block, snake_List)
-        Your_score(dis, Length_of_snake - 1)  # Передаем 'dis' в качестве аргумента
+        Your_score(dis, Length_of_snake - 1)
         pygame.display.update()
         # Генерация еды
         if x1 == foodx and y1 == foody:
