@@ -1,34 +1,9 @@
-# import time
-# import random
-
-# def game_vnesh():
-#     white = (255, 255, 255)
-#     yellow = (255, 255, 102)
-#     black = (0, 0, 0)
-#     red = (213, 50, 80)
-#     green = (0, 255, 0)
-#     blue = (50, 153, 213)
-#     dis_width = 800
-#     dis_height = 600
-#     snake_List = []
-#     Length_of_snake = 1
-#     snake_block = 10
-#     snake_speed = 15
-#     snake_head = []
-#     snake_head.append(x1)
-#     snake_head.append(y1)
-#     snake_List.append(snake_head)
-
-    
-    
-#     return dis_width, dis_height, snake_speed,  blue, green, red, white, snake_head, snake_List, snake_block,
-
 import time
 import random
 import pygame
 
 def game_vnesh():
-    pygame.init()  # Инициализация Pygame
+    pygame.init()
 
     white = (255, 255, 255)
     yellow = (255, 255, 102)
