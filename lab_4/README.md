@@ -1,6 +1,220 @@
 # lab_4
 ## Задание 
 ### 00_distance
+
+```py
+import math
+import random
+from collections import deque
+
+class EquivalenceClustering:
+    def __init__(self, epsilon):
+        self.epsilon = epsilon
+        self.users = {}  # {user_id: [session_time, clicks, frequency]}
+        
+    def add_user(self, user_id, features):
+        """Добавление пользователя с его характеристиками"""
+        self.users[user_id] = features
+    
+    def euclidean_distance(self, vec1, vec2):
+        """Вычисление евклидова расстояния между двумя векторами"""
+        if len(vec1) != len(vec2):
+            raise ValueError("Векторы должны иметь одинаковую размерность")
+        
+        sum_sq = 0.0
+        for i in range(len(vec1)):
+            sum_sq += (vec1[i] - vec2[i]) ** 2
+        return math.sqrt(sum_sq)
+    
+    def are_users_similar(self, user_id1, user_id2):
+        """Проверка исходного отношения 'похож' (отношение толерантности)"""
+        vec1 = self.users[user_id1]
+        vec2 = self.users[user_id2]
+        distance = self.euclidean_distance(vec1, vec2)
+        return distance <= self.epsilon
+    
+    def build_equivalence_classes(self):
+        """
+        Построение классов эквивалентности R* 
+        (транзитивное замыкание отношения 'похож')
+        """
+        user_ids = list(self.users.keys())
+        visited = set()
+        equivalence_classes = []
+        
+        for user_id in user_ids:
+            if user_id not in visited:
+                # Находим класс эквивалентности для текущего пользователя
+                equivalence_class = self._find_equivalence_class(user_id, visited)
+                equivalence_classes.append(equivalence_class)
+        
+        return equivalence_classes
+    
+    def _find_equivalence_class(self, start_user_id, visited):
+        """
+        Поиск класса эквивалентности с помощью BFS.
+        Класс эквивалентности = все пользователи, достижимые через цепочки похожих.
+        """
+        equivalence_class = set()
+        queue = deque([start_user_id])
+        visited.add(start_user_id)
+        
+        while queue:
+            current_user = queue.popleft()
+            equivalence_class.add(current_user)
+            
+            # Ищем всех пользователей, похожих на текущего
+            for other_user in self.users:
+                if other_user != current_user and other_user not in visited:
+                    # Проверяем исходное отношение "похож"
+                    if self.are_users_similar(current_user, other_user):
+                        visited.add(other_user)
+                        queue.append(other_user)
+        
+        return equivalence_class
+    
+    def prove_equivalence_properties(self):
+        """Доказательство свойств отношения эквивалентности R*"""
+        print("=== ДОКАЗАТЕЛЬСТВО СВОЙСТВ ОТНОШЕНИЯ ЭКВИВАЛЕНТНОСТИ R* ===")
+        print("Отношение R*: 'принадлежат к одному связному компоненту/классу эквивалентности'")
+        print()
+        
+        # 1. Рефлексивность
+        print("1. РЕФЛЕКСИВНОСТЬ:")
+        print("   Для любого пользователя u: u R* u")
+        print("   Доказательство:")
+        print("   - Каждый пользователь достигается сам из себя тривиальной цепочкой длины 0")
+        print("   - Следовательно, каждый пользователь принадлежит своему классу эквивалентности")
+        print("   ✓ Свойство выполняется")
+        print()
+        
+        # 2. Симметричность
+        print("2. СИММЕТРИЧНОСТЬ:")
+        print("   Для любых пользователей u, v: если u R* v, то v R* u")
+        print("   Доказательство:")
+        print("   - Если u R* v, то существует цепочка u = u₁, u₂, ..., uₙ = v")
+        print("   - Так как отношение 'похож' симметрично, цепочку можно обратить: v = uₙ, uₙ₋₁, ..., u₁ = u")
+        print("   - Следовательно, v R* u")
+        print("   ✓ Свойство выполняется")
+        print()
+        
+        # 3. Транзитивность
+        print("3. ТРАНЗИТИВНОСТЬ:")
+        print("   Для любых пользователей u, v, w: если u R* v и v R* w, то u R* w")
+        print("   Доказательство:")
+        print("   - Из u R* v: существует цепочка P₁: u = p₁, p₂, ..., pₖ = v")
+        print("   - Из v R* w: существует цепочка P₂: v = q₁, q₂, ..., qₘ = w")
+        print("   - Склеиваем цепочки: u = p₁, ..., pₖ = v = q₁, ..., qₘ = w")
+        print("   - Получаем цепочку от u к w")
+        print("   - Следовательно, u R* w")
+        print("   ✓ Свойство выполняется")
+        print()
+        
+        print("Все три свойства выполняются ⇒ R* - отношение эквивалентности ✓")
+    
+    def print_clustering_results(self, equivalence_classes):
+        """Вывод результатов кластеризации"""
+        print(f"\n=== РЕЗУЛЬТАТЫ КЛАСТЕРИЗАЦИИ ===")
+        print(f"Порог похожести (epsilon): {self.epsilon}")
+        print(f"Всего пользователей: {len(self.users)}")
+        print(f"Найдено классов эквивалентности: {len(equivalence_classes)}")
+        print()
+        
+        for i, eq_class in enumerate(equivalence_classes, 1):
+            print(f"Класс эквивалентности {i}: {len(eq_class)} пользователей")
+            print(f"  Состав: {sorted(eq_class)}")
+            
+            # Вычисляем средние характеристики класса
+            avg_features = [0] * 3  # для трех характеристик
+            for user_id in eq_class:
+                features = self.users[user_id]
+                for j in range(3):
+                    avg_features[j] += features[j]
+            
+            for j in range(3):
+                avg_features[j] /= len(eq_class)
+            
+            print(f"  Среднее время сессии: {avg_features[0]:.2f} мин")
+            print(f"  Среднее количество кликов: {avg_features[1]:.2f}")
+            print(f"  Средняя частота посещений: {avg_features[2]:.2f} раз/нед")
+            print()
+
+# Пример использования
+def generate_test_data():
+    """Генерация тестовых данных с тремя явными кластерами"""
+    random.seed(42)
+    users_data = {}
+    
+    # Кластер 1: Активные пользователи
+    for i in range(1, 8):
+        users_data[i] = [
+            random.uniform(40, 60),  # session_time
+            random.randint(20, 30),  # clicks
+            random.uniform(4, 7)     # frequency
+        ]
+    
+    # Кластер 2: Средние пользователи
+    for i in range(8, 15):
+        users_data[i] = [
+            random.uniform(20, 40),
+            random.randint(10, 20),
+            random.uniform(2, 4)
+        ]
+    
+    # Кластер 3: Пассивные пользователи
+    for i in range(15, 21):
+        users_data[i] = [
+            random.uniform(5, 20),
+            random.randint(1, 10),
+            random.uniform(0.5, 2)
+        ]
+    
+    return users_data
+
+def main():
+    # Генерируем тестовые данные
+    users_data = generate_test_data()
+    
+    # Создаем объект кластеризации
+    clustering = EquivalenceClustering(epsilon=15.0)
+    
+    # Добавляем пользователей
+    for user_id, features in users_data.items():
+        clustering.add_user(user_id, features)
+    
+    # Доказываем свойства отношения эквивалентности
+    clustering.prove_equivalence_properties()
+    
+    # Выполняем кластеризацию (строим классы эквивалентности)
+    equivalence_classes = clustering.build_equivalence_classes()
+    
+    # Выводим результаты
+    clustering.print_clustering_results(equivalence_classes)
+    
+    # Демонстрация нарушения транзитивности исходного отношения
+    print("=== ДЕМОНСТРАЦИЯ ПРОБЛЕМЫ ИСХОДНОГО ОТНОШЕНИЯ ===")
+    print("Исходное отношение R: 'непосредственно похож' (d(u,v) ≤ ε)")
+    print("Оно не является транзитивным:")
+    
+    # Ищем пример нарушения транзитивности
+    user_ids = list(users_data.keys())
+    for i in range(len(user_ids)):
+        for j in range(i + 1, len(user_ids)):
+            if clustering.are_users_similar(user_ids[i], user_ids[j]):
+                for k in range(j + 1, len(user_ids)):
+                    if (clustering.are_users_similar(user_ids[j], user_ids[k]) and 
+                        not clustering.are_users_similar(user_ids[i], user_ids[k])):
+                        print(f"Найден контрпример:")
+                        print(f"  User {user_ids[i]} R User {user_ids[j]} (похожи)")
+                        print(f"  User {user_ids[j]} R User {user_ids[k]} (похожи)")
+                        print(f"  Но User {user_ids[i]} НЕ R User {user_ids[k]} (не похожи)")
+                        return
+
+if __name__ == "__main__":
+    main()
+
+```
+
 ```py
 Есть словарь координат городов
 
